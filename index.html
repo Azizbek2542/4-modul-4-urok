@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payapi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="Container">
+        <nav>
+            <img src="./img1.png" alt="" class="home-link">
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
+
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+
+            <a href="#Pricing">Pricing</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+            <button>Schedule a Demo</button>
+            <a style="color: #36536b66;" class="nav-last-link" href="#">Schedule a Demo</a>
+        </div>
+        </nav>
+        <main>
+            <div class="parent-container">
+                <h1 class="text">Start building with our APIs for absolutely free.</h1>
+                <div class="img2">
+                <img src="./img2.png" alt="">
+                </div>
+            </div>
+            <div id="About" class="parent-container2">
+                <div class="main-div">
+                    <div class="parent-circle">
+                        <div class="circle"></div>
+                        <div style="background-color: #527695;" class="circle"></div>
+                        <div style="background-color: #36536B;" class="circle"></div>
+                    </div>
+                    <div class="main-img">
+                    <img src="./img3.png" alt="">
+                    </div>
+                </div>
+                <div class="main-text">
+                    <h2>Easy to implement</h2>
+                    <p>Our API comes with just a few lines of code. You’ll be up and running in no time. We built our documentation page to integrate payments functionality with ease.</p>
+                </div>
+            </div>
+            <div id="Pricing" class="parent-container3">
+                <div class="child">
+                    <div class="circle2">
+                        <img src="./img4.png" alt="">
+                    </div>
+                    <p>Personal Finances</p>
+                </div>
+                <div class="child">
+                    <div class="circle2">
+                        <img src="./img5.png" alt="">
+                    </div>
+                    <p>Banking & Coverage</p>
+                </div>
+                <div class="child">
+                    <div class="circle2">
+                        <img src="./img6.png" alt="">
+                    </div>
+                    <p>Consumer Payments</p>
+                </div>
+            </div>
+        </main>
+        <footer id="Contact">
+            <div class="footer-navbar">
+                <div class="footer-navbar-a">
+                    <img src="./img7.png" alt="">
+                    <a href="#Pricing">Pricing</a>
+                    <a href="#About">About</a>
+                    <a href="#Contact">Contact</a>
+                </div>
+                <div class="footer-img">
+                <img src="./img8.svg" alt="">
+                <img src="./img9.svg" alt="">
+                <img src="./img10.svg" alt="">
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+    <script>
+  window.addEventListener('scroll', function () {
+    const sidebarCheckbox = document.getElementById('sidebar-active');
+    if (sidebarCheckbox.checked) {
+      sidebarCheckbox.checked = false;
+    }
+  });
+</script>
+</body>
+</html>
